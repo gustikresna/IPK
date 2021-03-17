@@ -1,13 +1,39 @@
 #SOAL 1 - IPK -BEASISWA
-nim = list(map(int,input('Masukkan NIM (jika lebih dari satu, pisahkan dengan koma): ').split(',')))
-nama = input('Masukkan Nama (jika lebih dari satu, pisahkan dengan koma): ').split(',')
-alamat = input('Masukkan Alamat (jika lebih dari satu, pisahkan dengan koma): ').split(',')
-asl_sklh = input('Masukkan Asal Sekolah (jika lebih dari satu, pisahkan dengan koma): ').split(',')
-kode_prod = input('Masukkan Kode Prodi (jika lebih dari satu, pisahkan dengan koma): ').split(',')
-nilai_ipk_awl = list(map(int,input('Masukkan IPK Awal (jika lebih dari satu, pisahkan dengan koma): ').split(',')))
-nilai_uts = list(map(int,input('Masukkan UTS (jika lebih dari satu, pisahkan dengan koma): ').split(',')))
-nilai_uas = list(map(int,input('Masukkan UAS (jika lebih dari satu, pisahkan dengan koma): ').split(',')))
-nilai_tm = list(map(int,input('Masukkan TM (jika lebih dari satu, pisahkan dengan koma): ').split(',')))
+jumlah_data = int(input('Masukkan Jumlah Data Mahasiswa/i yg ingin di-input : '))
+
+#initiate list all data
+nim = []
+nama = []
+alamat = []
+asl_sklh = []
+kode_prod = []
+nilai_ipk_awl = []
+nilai_uts = []
+nilai_uas = []
+nilai_tm = []
+
+for i in range(jumlah_data):
+    input_nim = int(input('Masukkan NIM : '))
+    input_nama = input('Masukkan Nama : ')
+    input_alamat = input('Masukkan Alamat : ')
+    input_asl_sklh = input('Masukkan Asal Sekolah : ')
+    input_kode_prod = input('Masukkan Kode Prodi : ')
+    input_nilai_ipk_awl = int(input('Masukkan IPK Awal : '))
+    input_nilai_uts = int(input('Masukkan Nilai UTS : '))
+    input_nilai_uas = int(input('Masukkan Nilai UAS : '))
+    input_nilai_tm = int(input('Masukkan Nilai TM : '))
+
+    nim.append(input_nim)
+    nama.append(input_nama)
+    alamat.append(input_alamat)
+    asl_sklh.append(input_asl_sklh)
+    kode_prod.append(input_kode_prod)
+    nilai_ipk_awl.append(input_nilai_ipk_awl)
+    nilai_uts.append(input_nilai_uts)
+    nilai_uas.append(input_nilai_uas)
+    nilai_tm.append(input_nilai_tm)
+
+
 
 nilai_ipk = [] #initiate list nilai ipk
 beasiswa_list = [] #initiate list untuk beasiswa
