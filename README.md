@@ -1,0 +1,2 @@
+# IPK
+exercise IPK - beasiswa
