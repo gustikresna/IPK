@@ -39,12 +39,6 @@ for i in range(len(nim)): #looping untuk seluruh inputan
 
 #print tabel
 print(' ')
-print('| NIM\t', '| Nama\t\t', '| Alamat\t', '| Asal Sekolah\t', '| Kode Prodi\t', '| IPK\t\t', '| Beasiswa\t|') #print header
-for i in range(len(nim)) : #print data
-    print('| ', nim[i],'\t',
-    '| ', nama[i],'\t',
-    '| ', alamat[i],'\t',
-    '| ', asl_sklh[i],'\t',
-    '| ', kode_prod[i],'\t',
-    '| ', nilai_ipk[i],'\t',
-    '| ', beasiswa_list[i],'\t|')
+print ('| {:<10} | {:<15} | {:<20} | {:<20} | {:<20} | {:<8} | {:<10}|'.format('NIM','Nama','Alamat','Asal Sekolah','Kode Prodi','IPK', 'Beasiswa'))
+for i in range(len(nim)):
+    print ('| {:<10} | {:<15} | {:<20} | {:<20} | {:<20} | {:<8} | {:<10}|'.format(nim[i], nama[i], alamat[i], asl_sklh[i], kode_prod[i], nilai_ipk[i], beasiswa_list[i]))
